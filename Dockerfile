@@ -72,4 +72,5 @@ RUN set -x \
 
 COPY mpd.conf /etc/mpd.conf
 COPY docker-entrypoint.sh /
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
 ENTRYPOINT ["/docker-entrypoint.sh"]

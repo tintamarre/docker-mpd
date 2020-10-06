@@ -1,0 +1,16 @@
+version: "2"
+services:
+  mpd-streamer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mpd-streamer
+    volumes:
+      - /mnt/music:/mpd/music:ro
+      - mpd-cache:/mpd/cache
+      - /tmp:/mpd/playlists
+    ports:
+      - 6600:6600
+      - 8080:8000
+volumes:
+  mpd-cache:
