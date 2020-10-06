@@ -1,4 +1,4 @@
-ocker MPD intended for HTTP streaming
+### Docker MPD intended for HTTP streaming
 
 forked from https://hub.docker.com/r/randomcoww/mpd/
 
